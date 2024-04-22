@@ -20,7 +20,7 @@ const userSchema = new Schema({
         required: true
     },
     dob: {
-        type: Date,
+        type: String,
         required: true
     },
     gender: {
@@ -28,7 +28,7 @@ const userSchema = new Schema({
         required: true
     },
     mobile_number: {
-        type: Number,
+        type: String,
         required: true
     },
     email: {
