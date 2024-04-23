@@ -1,0 +1,23 @@
+.navbar-light-blue {
+    background-color: #202ddf; /* Light blue color */
+  }
+  
+  .btn-outline-light-blue {
+    color: #87CEFA; /* Light blue color */
+    border-color: #87CEFA; /* Light blue color */
+  }
+  
+  .btn-outline-light-blue:hover {
+    color: #fff; /* White color on hover */
+    background-color: #87CEFA; /* Light blue color on hover */
+    border-color: #87CEFA; /* Light blue color on hover */
+  }
+  
+  .bg-blue {
+    background-color: #2536d3 !important; /* Blue color */
+  }
+  
+  .nav-white {
+    color: #fff !important; /* White color */
+  }
+  
