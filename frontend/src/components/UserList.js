@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./UserList.css"; // Import CSS file for custom styling
 
 export default function UserList() {
   const [users, setUsers] = useState([]);
@@ -36,7 +37,7 @@ export default function UserList() {
         <div className="col-lg-8">
           <div className="card">
             <div className="card-body">
-              <h2>User List</h2>
+              <h2 className="mb-4">User List</h2>
               <div className="mb-3">
                 <input
                   type="text"
@@ -46,32 +47,32 @@ export default function UserList() {
                   onChange={handleSearch}
                 />
               </div>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Date of Birth</th>
-                    <th>Gender</th>
-                    <th>Mobile Number</th>
-                    <th>Email</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredUsers.map((user, index) => (
-                    <tr key={index}>
-                      <td>{user.first_name}</td>
-                      <td>{user.last_name}</td>
-                      <td>{user.dob}</td>
-                      <td>{user.gender}</td>
-                      <td>{user.mobile_number}</td>
-                      <td>{user.email}</td>
-                      
+              <div className="table-container">
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date of Birth</th>
+                      <th>Gender</th>
+                      <th>Mobile Number</th>
+                      <th>Email</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {filteredUsers.map((user, index) => (
+                      <tr key={index}>
+                        <td>{user.first_name}</td>
+                        <td>{user.last_name}</td>
+                        <td>{user.dob}</td>
+                        <td>{user.gender}</td>
+                        <td>{user.mobile_number}</td>
+                        <td>{user.email}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
