@@ -1,0 +1,17 @@
+/* NewHeader.css */
+
+.new-navbar {
+  background-color: blue; 
+}
+
+.new-navbar-nav {
+  margin-left: auto; 
+}
+
+.new-nav-item {
+  margin-left: 10px; 
+}
+
+.new-nav-link {
+  color: rgb(35, 47, 224) !important; 
+}
