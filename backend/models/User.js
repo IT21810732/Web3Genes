@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     type: {
         type: String,
-        required: true
+        required: false
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     first_name: {
         type: String,
@@ -21,7 +21,7 @@ const userSchema = new Schema({
     },
     dob: {
         type: String,
-        required: true
+        required: false
     },
     gender: {
         type: String,
